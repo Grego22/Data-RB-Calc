@@ -40,8 +40,8 @@ class ClassroomTest < Minitest::Test
     assert_equal 70, averages(DATA)[:dorian]
   end
 
-  def test_letter_grade
-  
+  def test_letter_grade #5
+
     assert_equal "A", letter_grade(1000)
     assert_equal "A", letter_grade(92)
     assert_equal "B", letter_grade(84)

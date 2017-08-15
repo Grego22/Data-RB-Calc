@@ -38,11 +38,11 @@ end
 def letter_grade(score)
   if score >= 90
     return "A"
-  elsif score >= 80 && <= 89
+  elsif score >= 80 && score <= 89
     return "B"
-  elsif score >= 70 && <= 79
+  elsif score >= 70 && score <= 79
     return "C"
-  elsif score >= 60 && <= 69
+  elsif score >= 60 && score <= 69
     return "D"
   else score <= 60
     return "F"
@@ -58,6 +58,7 @@ end
 
 # Return the average for the entire class.
 def class_average(grade_hash)
+  
 end
 
 # Return an array of the top `number_of_students` students.
