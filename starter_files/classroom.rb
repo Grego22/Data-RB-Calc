@@ -25,7 +25,11 @@ end
 # TIP: To convert an array like [[:indiana, 90], [:nevada, 80]] to a hash,
 # use .to_h. Also look at Hash#transform_values.
 def averages(grade_hash)
+  grade_hash.map do |students, scores|
+    [student, scores.sum/ scores.length]
 
+end
+  return array.to_h
 
 end
 
@@ -58,7 +62,7 @@ end
 
 # Return the average for the entire class.
 def class_average(grade_hash)
-  
+
 end
 
 # Return an array of the top `number_of_students` students.
